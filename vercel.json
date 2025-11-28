@@ -1,9 +1,10 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/bai01", "destination": "/bai01.html" },
-    { "source": "/bai02", "destination": "/bai02.html" },
+    { "source": "/bai01", "destination": "/Bai01.html" },
+    { "source": "/bai02", "destination": "/Bai02.html" },
     { "source": "/", "destination": "/index.html" }
   ]
 }
+
 
