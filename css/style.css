@@ -1,0 +1,151 @@
+body {
+  font-family: Arial;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+}
+
+.back {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* MENU */
+.menu-title {
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.menu-btn {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  width: 250px;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.menu-btn:hover {
+  background: #217dbb;
+}
+
+/* BÀI 01 */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 25%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.right {
+  width: 75%;
+}
+
+.add-task-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 150px;
+}
+
+.task-item {
+  background: #eeeeee;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .matrix {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* BÀI 02 */
+.game {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.game-box {
+  display: inline-block;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.hidden { display: none; }
+
+/* CONFETTI */
+#confetti {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: -10px;
+  animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+  }
+}

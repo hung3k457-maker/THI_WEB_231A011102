@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 01 - TODO MATRIX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay lại Menu</a>
+
+<div class="container">
+
+  <!-- CỘT TRÁI -->
+  <div class="left">
+    <img src="images/avatar.jpg" class="avatar">
+    <h2>Hoàng Phi Hùng</h2>
+    <p>MSSV: <span id="mssv">231A011102</span></p>
+  </div>
+
+  <!-- CỘT PHẢI -->
+  <div class="right">
+
+    <div class="add-task-box">
+      <input id="taskName" type="text" placeholder="Tên công việc">
+      <select id="taskPriority">
+        <option value="1">1 - Quan trọng & Khẩn cấp</option>
+        <option value="2">2 - Quan trọng / Không Khẩn cấp</option>
+        <option value="3">3 - Không Quan trọng / Khẩn cấp</option>
+        <option value="4">4 - Không Quan trọng / Không Khẩn cấp</option>
+      </select>
+      <button id="btnAddTask">Thêm</button>
+    </div>
+
+    <div class="matrix">
+      <div class="box" id="p1"><h3>Quan trọng & Khẩn cấp</h3></div>
+      <div class="box" id="p2"><h3>Quan trọng - Không Khẩn cấp</h3></div>
+      <div class="box" id="p3"><h3>Không Quan trọng - Khẩn cấp</h3></div>
+      <div class="box" id="p4"><h3>Không Quan trọng - Không Khẩn cấp</h3></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

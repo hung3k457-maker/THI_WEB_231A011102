@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 02 - Game Đoán Số</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay lại Menu</a>
+
+<div class="game">
+
+  <h1>🎮 Game Đoán Số (1 - 100)</h1>
+
+  <div class="game-box">
+    <input id="guess" type="number" placeholder="Nhập số (1-100)">
+    <button id="btnGuess">Đoán</button>
+    <button id="btnRestart" class="hidden">Chơi lại</button>
+
+    <p id="message"></p>
+    <p id="count"></p>
+  </div>
+
+  <div id="confetti"></div>
+
+  <div class="note">
+    <h3>Giải thích logic tư duy:</h3>
+    <p>
+      - Random số bằng: <code>Math.floor(Math.random()*100) + 1</code><br>
+      - Kiểm tra input bằng <code>isNaN()</code> để tránh lỗi.<br>
+      - Nếu số đoán > số random → báo “quá cao”.<br>
+      - Nếu số đoán < số random → báo “quá thấp”.<br>
+      - Nếu đúng → hiện confetti + khóa input.<br>
+    </p>
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
